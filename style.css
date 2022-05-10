@@ -1,0 +1,178 @@
+:root{
+    --border-color: 0px solid #87b619;
+    --site-color: #0095f6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    /* min-width: 100vh; */
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border: var(--border-color);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 95vh;
+    border: var(--border-color);
+}
+
+.cell-phone{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    border: var(--border-color);
+}
+
+.cell-phone img{
+    height: 50rem;
+}
+
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-width: 24rem;
+    border: var(--border-color);
+}
+
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 20px;
+    border: 1px solid lightgrey;
+}
+
+.grupo:nth-child(1){
+    min-height: 19rem;
+    
+}
+
+.logo-insta{
+    height: 3rem;
+}
+
+.photo-minha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 0px solid #122A57;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo-minha img{
+    height: 7rem;
+    
+}
+
+.login{
+    background-color: var(--site-color);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    
+}
+
+.logout{
+    color: var(--site-color);
+    margin-top: 1rem;
+}
+
+.sem-conta{
+    color: rgb(160, 160, 160);
+    
+}
+
+.link-azul{
+    color: var(--site-color);
+    
+}
+
+.baixar-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: var(--border-color);
+}
+
+.baixar{
+    /* font-weight: bold; */
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/googleplay-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/apple-button.png');
+}
+
+/* media queries */
+
+@media (max-width: 1024px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px){
+    .container{
+        width: 100%;
+        justify-content: flex-start ;
+    }
+
+    .cell-phone{
+        display: none;
+    }
+
+    .continue{
+        width: 100%;
+    }
+
+    .grupo{
+        border: 1px solid transparent;
+        width: 100%;
+    }
+}
